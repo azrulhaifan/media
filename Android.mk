@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_MEDIA_VARIANT),caf-msm8996)
 QCOM_MEDIA_ROOT := $(call my-dir)
 
 include $(QCOM_MEDIA_ROOT)/mm-core/Android.mk
@@ -11,3 +12,4 @@ endif
 
 include $(QCOM_MEDIA_ROOT)/hypv-intercept/Android.mk
 
+endif
